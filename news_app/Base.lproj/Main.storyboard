@@ -19,6 +19,34 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OUd-dP-6Ub">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Type1" rowHeight="94" id="y9A-uw-Rph" customClass="Type1" customModule="news_app" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.333333969116211" width="414" height="94"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="y9A-uw-Rph" id="ghk-bs-jIx">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="94"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qd4-ho-9bU">
+                                                    <rect key="frame" x="20" y="11" width="374" height="72"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="qd4-ho-9bU" firstAttribute="top" secondItem="ghk-bs-jIx" secondAttribute="topMargin" id="F3x-7W-cd2"/>
+                                                <constraint firstItem="qd4-ho-9bU" firstAttribute="trailing" secondItem="ghk-bs-jIx" secondAttribute="trailingMargin" id="XCt-jn-kSK"/>
+                                                <constraint firstItem="qd4-ho-9bU" firstAttribute="bottom" secondItem="ghk-bs-jIx" secondAttribute="bottomMargin" id="g6T-Yf-r2q"/>
+                                                <constraint firstItem="qd4-ho-9bU" firstAttribute="leading" secondItem="ghk-bs-jIx" secondAttribute="leadingMargin" id="kdb-ba-wla"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="LabelText" destination="qd4-ho-9bU" id="2EO-Dd-xqP"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -37,7 +65,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="575" y="135"/>
+            <point key="canvasLocation" x="573.91304347826087" y="134.5108695652174"/>
         </scene>
     </scenes>
     <resources>

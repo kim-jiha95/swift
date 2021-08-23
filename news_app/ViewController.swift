@@ -20,10 +20,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, cellForRowAt indexPath:
         IndexPath) -> UITableViewCell {
         
-        let cell = UITableViewCell.init(style: .default,  reuseIdentifier:
-            "TableCellType1")
+//        let cell = UITableViewCell.init(style: .default,  reuseIdentifier:
+//            "TableCellType1")
+        let cell = tableviewmain.dequeueReusableCell(withIdentifier: "Type1", for: indexPath) as! Type1
+         
+        cell.LabelText.text = "\(indexPath.row)"
+//        as? as! 부모 자식 친자확인
         
-        cell.textLabel?.text = "\(indexPath.row)"
+        
+//        cell.textLabel?.text = "\(indexPath.row)"
         
         return cell
     }
