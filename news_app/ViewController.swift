@@ -7,13 +7,37 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    
+    @IBOutlet weak var tableviewmain: UITableView!
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 15
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath:
+        IndexPath) -> UITableViewCell {
+        
+        let cell = UITableViewCell.init(style: .default,  reuseIdentifier:
+            "TableCellType1")
+        
+        cell.textLabel?.text = "\(indexPath.row)"
+        
+        return cell
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        tableviewmain.delegate = self
+        tableviewmain.dataSource = self
     }
 
-
+//        tableview 테이블뷰 - 여러개의 행이 모여있는 목록 뷰(화면)
+//        1.데이터 무엇
+//        2.데이터 몇개
+//        3.데이터 행 눌렀다
 }
 
