@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A78A081A26DFE298007DD314 /* NewsDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78A081926DFE298007DD314 /* NewsDetailController.swift */; };
 		A7F8A82426D3FF05005F0084 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F8A82326D3FF05005F0084 /* AppDelegate.swift */; };
 		A7F8A82626D3FF05005F0084 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F8A82526D3FF05005F0084 /* SceneDelegate.swift */; };
 		A7F8A82826D3FF05005F0084 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F8A82726D3FF05005F0084 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A78A081926DFE298007DD314 /* NewsDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailController.swift; sourceTree = "<group>"; };
 		A7F8A82026D3FF05005F0084 /* news_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = news_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7F8A82326D3FF05005F0084 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7F8A82526D3FF05005F0084 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				A7F8A82326D3FF05005F0084 /* AppDelegate.swift */,
+				A78A081926DFE298007DD314 /* NewsDetailController.swift */,
 				A7F8A82526D3FF05005F0084 /* SceneDelegate.swift */,
 				A7F8A82726D3FF05005F0084 /* ViewController.swift */,
 				A7F8A82926D3FF05005F0084 /* Main.storyboard */,
@@ -146,6 +149,7 @@
 				A7F8A82826D3FF05005F0084 /* ViewController.swift in Sources */,
 				A7F8A82426D3FF05005F0084 /* AppDelegate.swift in Sources */,
 				A7F8A82E26D3FF05005F0084 /* news_app.xcdatamodeld in Sources */,
+				A78A081A26DFE298007DD314 /* NewsDetailController.swift in Sources */,
 				A7F8A82626D3FF05005F0084 /* SceneDelegate.swift in Sources */,
 				A7F8A83B26D4106C005F0084 /* Type1.swift in Sources */,
 			);
