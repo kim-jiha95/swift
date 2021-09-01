@@ -96,7 +96,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             print("row :: \(row)")
             if let r = row as? Dictionary<String, Any> {
                 if let imageUrl = r["urlToImage"] as? String {
-                    controller.imageUrl = imageUrl                }
+                    controller.ImageUrl = imageUrl                }
                 if let desc = r["description"] as? String {
                     controller.desc = desc                }
                 
@@ -121,7 +121,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                         if let r = row as? Dictionary<String, Any> {
                             
                             if let imageUrl = r["urlToImage"] as? String {
-                                controller.imageUrl = imageUrl
+                                controller.ImageUrl = imageUrl
                                 
                             }
                             if let desc = r["description"] as? String {
